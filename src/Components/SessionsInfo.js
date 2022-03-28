@@ -7,7 +7,7 @@ import ProgressPercent from "./ProgressPercent";
 function SessionsInfo({ session, isPaused }) {
     if(session === null) return null;
     return (
-        <div>
+        <>
             {/* TODO: This area should show only when there is an active focus or break - i.e. the session is running or is paused */}
             <div className="row mb-2">
                 <div className="col">
@@ -31,7 +31,7 @@ function SessionsInfo({ session, isPaused }) {
                     />
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 export default SessionsInfo;
